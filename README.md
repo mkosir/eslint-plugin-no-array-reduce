@@ -37,3 +37,7 @@ Subjectively there are cases where you might want use it with `eslint-disable` b
 ## Discussions, debates and other resources:
 - [Jake Archibald](https://twitter.com/jaffathecake/status/1213077702300852224)
 - [Ekrem Aktaş - Write more readable JavaScript](https://betterprogramming.pub/think-again-before-you-use-array-reduce-28f785b5aea9)
+
+## Contributing
+
+All contributions are welcome! 
