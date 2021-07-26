@@ -1,6 +1,6 @@
 # eslint-plugin-no-array-reduce
-ESLint rule for dissalowing `Array.reduce()` method.  
-To keep you code easy to read and maintanable do yourself a favoiur and other developers by avoiding `Array.reduce()` method.
+ESLint rule to disallow `Array.reduce()` method.  
+To keep you code easy to read and maintanable do yourself a favour and other developers by disallowing `Array.reduce()` method.
 <!--
 ## Install
 
@@ -32,7 +32,7 @@ const dairy = groceries.reduce((acc, grocery) => (grocery.type === 'dairy' ? acc
 const dairy = groceries.filter((grocery) => grocery.type === 'dairy');
 ```
 
-Subjectivly there are cases where you might want use it with `eslint-disable` but strongly reccomended you write it differently.
+Subjectively there are cases where you might want use it with `eslint-disable` but strongly recommended you write it differently.
 
 ## Discussions, debates and other resources:
 - [Jake Archibald](https://twitter.com/jaffathecake/status/1213077702300852224)
