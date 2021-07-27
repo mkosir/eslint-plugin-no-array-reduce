@@ -2,6 +2,10 @@
 
 ESLint rule to disallow `Array.reduce()` method.
 
+To keep you code easy to read and maintainable do yourself and other developers a favour by disallowing `Array.reduce()` method.
+
+![](code-quality.png)
+
 <!--
 ## Install
 
@@ -9,11 +13,14 @@ ESLint rule to disallow `Array.reduce()` method.
 npm install eslint-plugin-no-array-reduce
 ```
 
-and add plugin to `.eslintrc.json` file `extends` array:
-```json
-"extends": [
-  "plugin:no-array-reduce"
-],
+Then extend the recommended eslint config:
+```js
+{
+  "extends": [
+    // ...
+    "plugin:no-array-reduce/recommended"
+  ]
+}
 ```
 -->
 
@@ -41,8 +48,6 @@ const dairy = groceries.filter((grocery) => grocery.type === "dairy");
 ```
 
 Subjectively there are cases where you might want use it with `eslint-disable` but strongly recommended you write it differently.
-
-To keep you code easy to read and maintanable do yourself and other developers a favour by disallowing `Array.reduce()` method.
 
 ## Discussions, debates and other resources:
 
