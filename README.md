@@ -7,7 +7,12 @@
 
 _ESLint rule to disallow `Array.reduce()` method._
 
-To keep you code easy to read and maintainable do yourself and other developers a favour by disallowing `Array.reduce()` method.
+`reduce()` in most cases can be written as `map()`, `filter()` or one of the `for()` loops which benefits in code readability and makes it easier to maintain for future developers.  
+There are many debates, discussions and other resources related to it:
+
+- [Jake Archibald](https://twitter.com/jaffathecake/status/1213077702300852224)
+- [Is reduce() bad](https://dev.to/jasterix/is-reduce-bad-2hhd)
+- [Write more readable JavaScript](https://betterprogramming.pub/think-again-before-you-use-array-reduce-28f785b5aea9)
 
 ![](code.png)
 
@@ -48,12 +53,7 @@ const dairy = groceries.reduce((acc, grocery) => (grocery.type === 'dairy' ? acc
 const dairy = groceries.filter((grocery) => grocery.type === 'dairy');
 ```
 
-Subjectively there are cases where you might want use it with `eslint-disable` but strongly recommended you write it differently.
-
-## Discussions, debates and other resources:
-
-- [Jake Archibald](https://twitter.com/jaffathecake/status/1213077702300852224)
-- [Ekrem Aktaş - Write more readable JavaScript](https://betterprogramming.pub/think-again-before-you-use-array-reduce-28f785b5aea9)
+Subjectively there are cases where you still might want to use `reduce()` with `eslint-disable`.
 
 ## Contributing
 
