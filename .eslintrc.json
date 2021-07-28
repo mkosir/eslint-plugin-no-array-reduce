@@ -1,0 +1,22 @@
+{
+  "parser": "@typescript-eslint/parser",
+
+  "extends": ["plugin:@typescript-eslint/recommended", "prettier", "plugin:prettier/recommended"],
+
+  "plugins": ["@typescript-eslint", "import"],
+
+  "rules": {
+    // Import
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", "internal", "parent", "sibling"],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ]
+  }
+}
