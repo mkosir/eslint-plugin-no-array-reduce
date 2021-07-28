@@ -28,8 +28,10 @@ module.exports = {
     'no-reduce-test': {
       create: disallowArrayFunction,
     },
-    create: function (context) {
-      return disallowArrayFunction(context, 'reduceRight');
+    'no-reduce-right': {
+      create: function (context) {
+        return disallowArrayFunction(context, 'reduceRight');
+      },
     },
     // 'no-reduce': {
     //   create: (context) => {
