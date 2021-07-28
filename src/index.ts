@@ -25,24 +25,16 @@ import { disallowArrayFunction } from './rules/disallowArrayFunction';
 
 module.exports = {
   rules: {
-    'no-reduce-test': {
-      create: disallowArrayFunction,
+    'no-reduce': {
+      create: function (context) {
+        return disallowArrayFunction(context, 'reduce');
+      },
     },
     'no-reduce-right': {
       create: function (context) {
         return disallowArrayFunction(context, 'reduceRight');
       },
     },
-    // 'no-reduce': {
-    //   create: (context) => {
-    //     disallowArrayFunction(context, 'reduce');
-    //   },
-    // },
-    // 'no-reduce-right': {
-    //   create: (context) => {
-    //     return disallowArrayFunction(context, 'reduceRight');
-    //   },
-    // },
   },
 
   // configs: {
