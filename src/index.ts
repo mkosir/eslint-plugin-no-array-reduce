@@ -37,14 +37,13 @@ module.exports = {
     },
   },
 
-  // configs: {
-  //   recommended: {
-  //     plugins: ['no-array-reduce'],
-  //     rules: {
-  //       'no-array-reduce/no-reduce-test': 'error',
-  //       'no-array-reduce/no-reduce': 'error',
-  //       'no-array-reduce/no-reduce-right': 'error',
-  //     },
-  //   },
-  // },
+  configs: {
+    recommended: {
+      plugins: ['no-array-reduce'],
+      rules: {
+        'no-array-reduce/no-reduce': 'error',
+        'no-array-reduce/no-reduce-right': 'error',
+      },
+    },
+  },
 };
