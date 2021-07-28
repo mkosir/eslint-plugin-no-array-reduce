@@ -6,6 +6,8 @@
   "plugins": ["@typescript-eslint", "import"],
 
   "rules": {
+    "@typescript-eslint/ban-ts-comment": 0,
+
     // Import
     "import/order": [
       "error",
