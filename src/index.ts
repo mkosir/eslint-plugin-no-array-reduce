@@ -26,10 +26,14 @@ import { disallowArrayFunction } from './rules/disallowArrayFunction';
 module.exports = {
   rules: {
     'no-reduce': {
-      create: (context) => disallowArrayFunction(context, 'reduce'),
+      create: (context) => {
+        disallowArrayFunction(context, 'reduce');
+      },
     },
     'no-reduce-right': {
-      create: (context) => disallowArrayFunction(context, 'reduceRight'),
+      create: (context) => {
+        return disallowArrayFunction(context, 'reduceRight');
+      },
     },
   },
 
