@@ -25,6 +25,9 @@ import { disallowArrayFunction } from './rules/disallowArrayFunction';
 
 module.exports = {
   rules: {
+    'no-reduce-test': {
+      create: disallowArrayFunction,
+    },
     'no-reduce': {
       create: (context) => {
         disallowArrayFunction(context, 'reduce');
@@ -41,6 +44,7 @@ module.exports = {
     recommended: {
       plugins: ['no-array-reduce'],
       rules: {
+        'no-array-reduce/no-reduce-test': 'error',
         'no-array-reduce/no-reduce': 'error',
         'no-array-reduce/no-reduce-right': 'error',
       },
