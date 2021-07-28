@@ -1,6 +1,8 @@
+import { Rule } from 'eslint';
+
 import { disallowArrayFunction } from './rules/disallowArrayFunction';
 
-module.exports = {
+const plugin: { rules: { [key: string]: Rule.RuleModule }; [key: string]: any } = {
   rules: {
     'no-reduce': {
       create: (context) => disallowArrayFunction(context, 'reduce'),
@@ -20,3 +22,5 @@ module.exports = {
     },
   },
 };
+
+module.exports = plugin;
