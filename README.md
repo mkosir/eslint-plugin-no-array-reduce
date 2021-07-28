@@ -11,14 +11,14 @@ To keep you code easy to read and maintainable do yourself and other developers 
 
 ![](code.png)
 
-<!--
 ## Install
 
 ```bash
-npm install eslint-plugin-no-array-reduce
+npm install --save-dev eslint-plugin-no-array-reduce
 ```
 
-Then extend the recommended eslint config:
+Then extend eslint config:
+
 ```js
 {
   "extends": [
@@ -27,7 +27,6 @@ Then extend the recommended eslint config:
   ]
 }
 ```
--->
 
 ## Fail
 
