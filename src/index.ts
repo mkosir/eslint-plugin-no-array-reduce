@@ -1,4 +1,4 @@
-import { disallowArrayFunction } from './rules/no-reduce';
+import { disallowArrayFunction } from './rules/disallowArrayFunction';
 
 module.exports = {
   rules: {
