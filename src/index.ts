@@ -1,8 +1,8 @@
-import { noArrayReduce } from './no-array-reduce';
+import { noArrayReduce } from './rules/no-array-reduce';
 
 module.exports = {
   rules: {
-    'no-reduce': {
+    'no-array-reduce': {
       create: noArrayReduce,
     },
   },
