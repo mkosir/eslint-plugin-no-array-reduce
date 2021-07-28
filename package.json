@@ -16,7 +16,8 @@
     "lint-prettier": "prettier --config .prettierrc -l  './**/*.{ts,tsx,js,jsx,css,scss,json,md}'",
     "prettier": "prettier --config .prettierrc --write './**/*.{ts,tsx,js,jsx,css,scss,json,md}'",
     "commit": "git-cz",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "validate": "npm run lint && npm run build"
   },
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
@@ -43,7 +44,7 @@
     "*": [
       "pretty-quick --staged"
     ],
-    "{src,test}/**/*.{js,jsx,ts,tsx}": [
+    "{src,test}/**/*.{js,ts}": [
       "eslint --max-warnings 0"
     ]
   },
