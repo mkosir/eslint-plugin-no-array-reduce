@@ -11,7 +11,7 @@
   "scripts": {
     "prepare": "husky install",
     "build": "tsup src/index.ts --no-splitting --minify",
-    "lint": "eslint --max-warnings 0 --ext .js,ts src/",
+    "lint": "eslint --max-warnings 0 'src/**/*.{js,ts}'",
     "lint-staged-husky": "lint-staged",
     "lint-prettier": "prettier --config .prettierrc -l  './**/*.{ts,tsx,js,jsx,css,scss,json,md}'",
     "prettier": "prettier --config .prettierrc --write './**/*.{ts,tsx,js,jsx,css,scss,json,md}'",

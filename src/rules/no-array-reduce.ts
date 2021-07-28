@@ -12,6 +12,7 @@ export function noArrayReduce(context: Rule.RuleContext): Rule.RuleListener {
 
     // MemberExpression: function reportUnwantedName(node) {
     MemberExpression(node) {
+      // @ts-ignore
       const functionName = node.property.name;
 
       if (functionName === disallowFunctionName) {
