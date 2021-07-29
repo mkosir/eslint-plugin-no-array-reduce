@@ -3,7 +3,6 @@
   "version": "0.0.0-development",
   "description": "ESLint rule to disallow Array.reduce() method.",
   "main": "./dist/index.js",
-  "typings": "./dist/types/index.d.ts",
   "files": [
     "dist",
     "README.md"
@@ -40,6 +39,9 @@
     "tsup": "^4.12.5",
     "typescript": "^4.3.5"
   },
+  "peerDependencies": {
+    "eslint": ">=7.0.0"
+  },
   "lint-staged": {
     "*": [
       "pretty-quick --staged"
@@ -73,6 +75,7 @@
     "typescript",
     "eslint",
     "eslint-plugin",
-    "eslint-rules"
+    "eslint-rules",
+    "reduce"
   ]
 }
