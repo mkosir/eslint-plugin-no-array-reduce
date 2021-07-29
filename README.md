@@ -8,6 +8,7 @@
 _ESLint rule to disallow `Array.reduce()` method._
 
 Method `reduce()` in most cases can be written as `map()`, `filter()` or one of the `for()` loops which benefits in code readability and makes it easier to maintain for future developers.  
+Subjectively there are cases where you still might want to use `reduce()` with `eslint-disable`.  
 There are many debates, discussions and other resources related to it:
 
 - [Jake Archibald](https://twitter.com/jaffathecake/status/1213077702300852224)
@@ -52,8 +53,6 @@ const dairy = groceries.reduce((acc, grocery) => (grocery.type === 'dairy' ? acc
 // Filter dairy products
 const dairy = groceries.filter((grocery) => grocery.type === 'dairy');
 ```
-
-Subjectively there are cases where you still might want to use `reduce()` with `eslint-disable`.
 
 ## Contributing
 
