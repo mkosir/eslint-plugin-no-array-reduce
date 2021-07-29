@@ -8,9 +8,7 @@ const config: { rules: { [key: string]: Rule.RuleModule }; [key: string]: any } 
       create: (context) => disallowArrayFunction(context, 'reduce'),
     },
     'no-reduce-right': {
-      create: function (context) {
-        return disallowArrayFunction(context, 'reduceRight');
-      },
+      create: (context) => disallowArrayFunction(context, 'reduceRight'),
     },
   },
 
