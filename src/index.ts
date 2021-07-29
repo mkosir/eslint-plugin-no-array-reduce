@@ -1,8 +1,11 @@
-import { Rule } from 'eslint';
+import { Rule, Linter } from 'eslint';
 
 import { disallowArrayFunction } from './rules/disallowArrayFunction';
 
-const config: { rules: { [key: string]: Rule.RuleModule }; [key: string]: any } = {
+const config: {
+  rules: { [key: string]: Rule.RuleModule };
+  configs: { [key: string]: Linter.Config };
+} = {
   rules: {
     'no-reduce': {
       create: (context) => disallowArrayFunction(context, 'reduce'),
