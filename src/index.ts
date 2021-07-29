@@ -5,7 +5,7 @@ import { disallowArrayFunction } from './rules/disallowArrayFunction';
 const config: { rules: { [key: string]: Rule.RuleModule }; [key: string]: any } = {
   rules: {
     'no-reduce': {
-      create: function (context) {
+      create: (context) => {
         return disallowArrayFunction(context, 'reduce');
       },
     },
