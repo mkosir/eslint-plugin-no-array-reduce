@@ -23,7 +23,7 @@
     "@commitlint/config-conventional": "^13.1.0",
     "@types/eslint": "^7.28.0",
     "@types/estree": "0.0.50",
-    "@types/node": "^16.4.13",
+    "@types/node": "^16.6.0",
     "@typescript-eslint/eslint-plugin": "^4.29.1",
     "@typescript-eslint/parser": "^4.29.1",
     "commitizen": "^4.2.4",
