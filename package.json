@@ -19,25 +19,25 @@
     "validate": "npm run lint && npm run build"
   },
   "devDependencies": {
-    "@commitlint/cli": "^14.1.0",
-    "@commitlint/config-conventional": "^14.1.0",
-    "@types/eslint": "^7.28.2",
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
+    "@types/eslint": "^8.2.0",
     "@types/estree": "0.0.50",
-    "@types/node": "^16.11.7",
-    "@typescript-eslint/eslint-plugin": "^5.3.1",
-    "@typescript-eslint/parser": "^5.3.1",
+    "@types/node": "^16.11.9",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
     "commitizen": "^4.2.4",
     "eslint": "^8.2.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-prettier": "^4.0.0",
     "husky": "^7.0.4",
-    "lint-staged": "^12.0.2",
+    "lint-staged": "^12.0.3",
     "prettier": "^2.4.1",
-    "pretty-quick": "^3.1.1",
+    "pretty-quick": "^3.1.2",
     "semantic-release": "^18.0.0",
-    "tsup": "^5.7.0",
-    "typescript": "^4.4.4"
+    "tsup": "^5.7.4",
+    "typescript": "^4.5.2"
   },
   "peerDependencies": {
     "eslint": ">=7.0.0"
