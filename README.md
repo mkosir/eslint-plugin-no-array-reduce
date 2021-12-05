@@ -1,6 +1,7 @@
 # eslint-plugin-no-array-reduce
 
 [![npm version][npm-badge]][npm-url]
+[![npm downloads][downloads-badge]][npm-url]
 [![CI][build-badge]][build-url]
 [![semantic-release][semantic-badge]][semantic-url]
 [![TypeScript][typescript-badge]][typescript-url]
@@ -61,6 +62,7 @@ All contributions are welcome!
 
 [npm-url]: https://www.npmjs.com/package/eslint-plugin-no-array-reduce
 [npm-badge]: https://img.shields.io/npm/v/eslint-plugin-no-array-reduce.svg
+[downloads-badge]: https://img.shields.io/npm/dm/eslint-plugin-no-array-reduce.svg?color=blue
 [build-badge]: https://github.com/mkosir/eslint-plugin-no-array-reduce/actions/workflows/main.yml/badge.svg
 [build-url]: https://github.com/mkosir/eslint-plugin-no-array-reduce/actions/workflows/main.yml
 [semantic-badge]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
