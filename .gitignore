@@ -8,6 +8,8 @@ bundle-analysis.html
 
 .rpt2_cache
 
+.DS_Store
+.env
 *.log
 .vscode
 .idea
