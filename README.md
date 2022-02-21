@@ -45,19 +45,19 @@ const groceries = [
   { name: 'beef', type: 'meat' },
 ];
 
-// Filter dairy products
-const dairy = groceries.reduce((acc, grocery) => (grocery.type === 'dairy' ? acc.concat(grocery) : acc), []);
 // Add price to each grocery
-const dairy = groceries.reduce((acc, grocery) => acc.concat({ ...grocery, price: 2.7 }), []);
+const groceriesWithPrices = groceries.reduce((acc, grocery) => acc.concat({ ...grocery, price: 2.7 }), []);
+// Filter dairy products
+const dairies = groceries.reduce((acc, grocery) => (grocery.type === 'dairy' ? acc.concat(grocery) : acc), []);
 ```
 
 ## Pass
 
 ```js
-// Filter dairy products
-const dairy = groceries.filter((grocery) => grocery.type === 'dairy');
 // Add price to each grocery
 const groceriesWithPrices = groceries.map((grocery) => ({ ...grocery, price: 2.7 }));
+// Filter dairy products
+const dairies = groceries.filter((grocery) => grocery.type === 'dairy');
 ```
 
 ## Contributing
