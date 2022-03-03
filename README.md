@@ -71,6 +71,8 @@ const dairies = products.filter((product) => product.type === 'dairy');
 const productsByType = products.groupBy((product) => product.type);
 ```
 
+<sub>[CodeSandbox](https://codesandbox.io/s/eslint-plugin-no-array-reduce-4cyc1i?file=/index.js)</sub>
+
 ## Contributing
 
 All contributions are welcome!
