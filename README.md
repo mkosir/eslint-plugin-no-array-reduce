@@ -39,25 +39,36 @@ Then extend eslint config:
 ## Fail
 
 ```js
-const groceries = [
+const products = [
   { name: 'milk', type: 'dairy' },
   { name: 'cheese', type: 'dairy' },
   { name: 'beef', type: 'meat' },
+  { name: 'chicken', type: 'meat' },
 ];
 
-// Add price to each grocery
-const groceriesWithPrices = groceries.reduce((acc, grocery) => acc.concat({ ...grocery, price: 2.7 }), []);
+// Add price to each product
+const productsWithPrices = products.reduce((acc, product) => acc.concat({ ...product, price: 2.7 }), []);
 // Filter dairy products
-const dairies = groceries.reduce((acc, grocery) => (grocery.type === 'dairy' ? acc.concat(grocery) : acc), []);
+const dairies = products.reduce((acc, product) => (product.type === 'dairy' ? acc.concat(product) : acc), []);
+// Group products by type
+const productsByType = products.reduce(
+  (acc, product) => ({
+    ...acc,
+    [product.type]: [...(acc[product.type] || []), product],
+  }),
+  [],
+);
 ```
 
 ## Pass
 
 ```js
-// Add price to each grocery
-const groceriesWithPrices = groceries.map((grocery) => ({ ...grocery, price: 2.7 }));
+// Add price to each product
+const productsWithPrices = products.map((product) => ({ ...product, price: 2.7 }));
 // Filter dairy products
-const dairies = groceries.filter((grocery) => grocery.type === 'dairy');
+const dairies = products.filter((product) => product.type === 'dairy');
+// Group products by type (ECMA stage 3 - https://github.com/tc39/proposal-array-grouping)
+const productsByType = products.groupBy((product) => product.type);
 ```
 
 ## Contributing
