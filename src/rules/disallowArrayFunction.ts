@@ -1,6 +1,9 @@
 import { Rule } from 'eslint';
 
-export const disallowArrayFunction = (context: Rule.RuleContext, disallowFunctionName: string): Rule.RuleListener => {
+export const disallowArrayFunction = (
+  context: Rule.RuleContext,
+  disallowFunctionName: 'reduce' | 'reduceRight',
+): Rule.RuleListener => {
   return {
     MemberExpression(node) {
       // @ts-ignore
