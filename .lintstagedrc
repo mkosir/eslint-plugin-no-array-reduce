@@ -1,0 +1,8 @@
+{
+  "*": [
+    "pretty-quick --staged"
+  ],
+  "*.{js,ts}": [
+    "eslint --max-warnings 0"
+  ]
+}
