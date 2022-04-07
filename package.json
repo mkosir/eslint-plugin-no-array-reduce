@@ -10,7 +10,7 @@
   "scripts": {
     "prepare": "husky install",
     "build": "tsup src/index.ts --no-splitting --minify",
-    "lint": "eslint --max-warnings 0 'src/**/*.{js,ts}'",
+    "lint": "eslint --max-warnings 0 .",
     "lint-staged-husky": "lint-staged",
     "lint-prettier": "prettier --config .prettierrc -l --ignore-unknown './**/*'",
     "prettier": "prettier --config .prettierrc --write --ignore-unknown './**/*'",
@@ -41,14 +41,6 @@
   },
   "peerDependencies": {
     "eslint": ">=7.0.0"
-  },
-  "lint-staged": {
-    "*": [
-      "pretty-quick --staged"
-    ],
-    "{src,test}/**/*.{js,ts}": [
-      "eslint --max-warnings 0"
-    ]
   },
   "commitlint": {
     "extends": [
