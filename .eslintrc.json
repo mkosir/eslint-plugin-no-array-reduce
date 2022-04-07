@@ -10,6 +10,7 @@
     "@typescript-eslint/no-explicit-any": 0,
 
     // Import
+    "import/no-default-export": 2,
     "import/order": [
       "error",
       {
