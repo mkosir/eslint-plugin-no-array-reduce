@@ -1,4 +1,5 @@
 import { Rule } from 'eslint';
+import { PrivateIdentifier } from 'estree';
 
 export const disallowArrayFunction = (
   context: Rule.RuleContext,
@@ -6,8 +7,7 @@ export const disallowArrayFunction = (
 ): Rule.RuleListener => {
   return {
     MemberExpression(node) {
-      // @ts-ignore
-      const functionName = node.property.name;
+      const functionName = (node.property as PrivateIdentifier).name;
 
       if (functionName === disallowFunctionName) {
         context.report({
