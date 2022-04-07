@@ -6,7 +6,7 @@
   "plugins": ["@typescript-eslint", "import"],
 
   "rules": {
-    "@typescript-eslint/ban-ts-comment": 0,
+    "@typescript-eslint/ban-ts-comment": ["error", { "ts-ignore": "allow-with-description" }],
 
     // Import
     "import/no-default-export": 2,
