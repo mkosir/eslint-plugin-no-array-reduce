@@ -12,8 +12,8 @@
     "build": "tsup src/index.ts --no-splitting --minify",
     "lint": "eslint --max-warnings 0 .",
     "lint-staged-husky": "lint-staged",
-    "lint-prettier": "prettier --config .prettierrc -l --ignore-unknown './**/*'",
-    "prettier": "prettier --config .prettierrc --write --ignore-unknown './**/*'",
+    "lint-format": "prettier --config .prettierrc -l --ignore-unknown './**/*'",
+    "format": "prettier --config .prettierrc --write --ignore-unknown './**/*'",
     "commit": "git-cz",
     "semantic-release": "semantic-release --branches main",
     "validate": "npm run lint && npm run build"
