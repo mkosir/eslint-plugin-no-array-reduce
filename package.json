@@ -11,6 +11,7 @@
     "prepare": "husky install",
     "build": "tsup src/index.ts --no-splitting --minify",
     "lint": "eslint --max-warnings 0 .",
+    "lint-fix": "eslint --fix .",
     "lint-staged-husky": "lint-staged",
     "format-lint": "prettier --config .prettierrc -l --ignore-unknown './**/*'",
     "format": "prettier --config .prettierrc --write --ignore-unknown './**/*'",
