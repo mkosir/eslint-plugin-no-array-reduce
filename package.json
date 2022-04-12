@@ -12,7 +12,7 @@
     "build": "tsup src/index.ts --no-splitting --minify",
     "lint": "eslint --max-warnings 0 .",
     "lint-staged-husky": "lint-staged",
-    "lint-format": "prettier --config .prettierrc -l --ignore-unknown './**/*'",
+    "format-lint": "prettier --config .prettierrc -l --ignore-unknown './**/*'",
     "format": "prettier --config .prettierrc --write --ignore-unknown './**/*'",
     "commit": "git-cz",
     "semantic-release": "semantic-release --branches main",
