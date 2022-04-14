@@ -17,7 +17,7 @@ There are many debates, discussions and other resources related to it:
 - [Is reduce() bad](https://dev.to/jasterix/is-reduce-bad-2hhd)
 - [Write more readable JavaScript](https://betterprogramming.pub/think-again-before-you-use-array-reduce-28f785b5aea9)
 
-![](code.png)
+![](misc/code.png)
 
 ## Install
 
