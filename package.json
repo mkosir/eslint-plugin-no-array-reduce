@@ -10,9 +10,10 @@
   "scripts": {
     "prepare": "husky install",
     "build": "tsup src/index.ts --no-splitting --minify",
-    "lint": "eslint --max-warnings 0 .",
+    "lint": "eslint --max-warnings 0 . && npm run tsc",
     "lint-fix": "eslint --fix .",
     "lint-staged-husky": "lint-staged",
+    "tsc": "tsc --noEmit",
     "format-lint": "prettier --config .prettierrc -l --ignore-unknown .",
     "format-fix": "prettier --config .prettierrc --write --ignore-unknown .",
     "commit": "git-cz",
