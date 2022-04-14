@@ -43,16 +43,6 @@
   "peerDependencies": {
     "eslint": ">=7.0.0"
   },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
-  "config": {
-    "commitizen": {
-      "path": "node_modules/cz-conventional-changelog"
-    }
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mkosir/eslint-plugin-no-array-reduce.git"
