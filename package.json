@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "prepare": "husky install",
-    "build": "tsup src/index.ts --no-splitting --minify",
+    "build": "tsup",
     "lint": "eslint --max-warnings 0 . && npm run tsc",
     "lint-fix": "eslint --fix .",
     "lint-staged-husky": "lint-staged",
