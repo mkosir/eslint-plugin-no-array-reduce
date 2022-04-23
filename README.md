@@ -4,6 +4,7 @@
 [![npm downloads][downloads-badge]][npm-url]
 [![CI][build-badge]][build-url]
 [![semantic-release][semantic-badge]][semantic-url]
+[![prettier][prettier-badge]][prettier-url]
 [![TypeScript][typescript-badge]][typescript-url]
 
 _ESLint rule to disallow `Array.reduce()` method._
@@ -84,5 +85,7 @@ All contributions are welcome!
 [build-url]: https://github.com/mkosir/eslint-plugin-no-array-reduce/actions/workflows/main.yml
 [semantic-badge]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
 [semantic-url]: https://github.com/semantic-release/semantic-release
+[prettier-badge]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg
+[prettier-url]: https://github.com/prettier/prettier
 [typescript-badge]: https://badges.frapsoft.com/typescript/code/typescript.svg?v=101
 [typescript-url]: https://github.com/microsoft/TypeScript
