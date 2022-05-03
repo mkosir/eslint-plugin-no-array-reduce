@@ -3,7 +3,9 @@
     "pretty-quick --staged"
   ],
   "*.{js,ts}": [
-    "eslint --max-warnings 0",
+    "eslint --max-warnings 0"
+  ],
+  "*.{ts}": [
     "tsc-files --noEmit -p tsconfig.dev.json"
   ]
 }
