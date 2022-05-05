@@ -1,6 +1,6 @@
 import { Rule, Linter } from 'eslint';
 
-import { disallowArrayFunction } from 'rules/disallowArrayFunction';
+import { disallowArrayFunction } from './rules/disallowArrayFunction';
 
 const config: {
   rules: { [key: string]: Rule.RuleModule };
