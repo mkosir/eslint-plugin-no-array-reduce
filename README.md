@@ -9,7 +9,7 @@
 
 _ESLint rule to disallow `Array.reduce()` method._
 
-Method `reduce()` in most cases can be written as `map()`, `filter()` or one of the `for()` loops which benefits in code readability and makes it easier to maintain for future developers.
+Method `reduce()` in most cases can be written as `map()`, `filter()` etc. which benefits in code readability and makes it easier to maintain for future developers.
 
 Subjectively there are still cases where you might want to use `reduce()` with `eslint-disable`.  
 There are many debates related to it:
