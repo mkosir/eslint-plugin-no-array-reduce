@@ -1,6 +1,6 @@
 import { Rule, Linter } from 'eslint';
 
-import { disallowArrayFunction } from './rules/disallowArrayFunction';
+import { disallowArrayMethod } from './rules/disallowArrayMethod';
 
 const config: {
   rules: { [key: string]: Rule.RuleModule };
@@ -8,10 +8,10 @@ const config: {
 } = {
   rules: {
     'no-reduce': {
-      create: (context) => disallowArrayFunction(context, 'reduce'),
+      create: (context) => disallowArrayMethod({ context, disallowMethodName: 'reduce' }),
     },
     'no-reduce-right': {
-      create: (context) => disallowArrayFunction(context, 'reduceRight'),
+      create: (context) => disallowArrayMethod({ context, disallowMethodName: 'reduceRight' }),
     },
   },
 
